@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 1%, 44%,0.1);
+    overflow:hidden ;
+}
+.age-cal{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    padding: 5rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
+    margin-top: 5em;
+}
+.dd-mm-y{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 32rem;
+}
+.icon1{
+    background-color: hsl(259, 100%, 65%);
+}
+.icon-container {
+    text-align: center;
+    position: relative;
+  }
+  
+  .icon-container img {
+    position: absolute;
+    top: -37px; /* Adjust the top value to position the image as desired */
+    left: 100%;
+    transform: translateX(-50%);
+    padding: 5px;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+  }
+  input{
+    height: 2.5rem;
+    width: 7rem;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-width: 1px;
+  }
+.year-month-day{
+    font-size: 32px;
+
+}
+.class1{
+    color: hsl(259, 100%, 65%)
+}
+@font-face {
+    font-family: MyCustomFont;
+    src: url('assets\fonts\Poppins-Regular.ttf');
+  }
+label{
+    color:rgba(0, 0, 0, 0.6) ;
+}
+p{
+  font-size: 12px;
+  padding-top: 5px;
+  color: red;
+  display: none;
+}
+@media (max-width:1020px){
+  .dd-mm-y{
+    width: min-content;
+  }
+  .age-cal{
+    margin-top: 10%;
+    padding: 2rem;
+  }
+}
+@media (max-width:519px){
+
+  .dd-mm-y{
+    gap: 20px;
+  }
+  input{
+    width:5rem
+  }
+  .icon-container img{
+    left: 50%;
+    padding: 5px;
+    top: -20px;
+  }
+  .year-month-day{
+    font-size: x-large;
+    padding-top: 30px;
+  }
+}
+@media (max-width:415px){
+  .dd-mm-y{
+    gap: 18px;
+
+  }
+  .year-month-day{
+    font-size: larger;
+  }
+  .age-cal{
+    padding: 1rem;
+    margin-top: 50%;
+  }
+
+
+}
+
